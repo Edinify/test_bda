@@ -1,0 +1,414 @@
+.details-header {
+  background-color: var(--neutrals-200);
+  padding-bottom: 16px;
+  position: sticky;
+  top: 86px;
+  z-index: 99;
+}
+.details-header.open {
+  z-index: 10;
+}
+
+.consultation .details-header{
+  position: relative;
+  top: 0;
+}
+
+.details-page.lesson-page .details-header {
+  top: 0;
+}
+.details-header-container {
+  width: 100%;
+}
+.details-header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-header-content .details-header-content-left {
+  display: flex;
+  align-items: center;
+  /* width: 80%; */
+  width: 100%;
+}
+
+.details-header-content.lesson-page .details-header-content-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.details-header-content.teacher .details-header-content-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.consultation-header-filter-container .teacher-page-add-btn{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teacher-page-add-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.details-header-content .search-input-con {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.details-header-content .phone-input-con {
+  margin-left: 12px;
+}
+.details-header-content .search-input-con .input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.details-header-content .search-input-con {
+  width: 236px;
+}
+.details-header-content .search-input-con .input-box input {
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 12px 10px 40px;
+  background: #fff;
+  width: 100%;
+}
+.details-header-content .search-input-con .input-box input::placeholder {
+  color: var(--neutrals-600, #717171);
+}
+.details-header-content .search-input-con .input-box .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  cursor: pointer;
+}
+.details-header-content .add-detail {
+  background-color: var(--primary-500);
+  border-radius: 8px;
+  padding: 10px 24px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  white-space: nowrap;
+}
+.details-header-content .add-detail:hover {
+  background-color: var(--primary-700);
+}
+.details-header-container .dropdown-name.mobile {
+  display: none;
+}
+
+.details-header-content-left .lesson-table-header-content {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.details-header-content-left .lesson-table-header-content .lesson-table-status {
+  display: flex;
+  align-items: center;
+}
+
+.details-header-content-left .lesson-table-header-content .date-container {
+  /* margin-top: 10px; */
+  margin-left: 10px;
+}
+
+.details-header-content-left
+  .lesson-table-header-content
+  .date-container
+  .date-container
+  .from {
+  width: 292px;
+}
+
+.lesson-page .apply-btn,
+.teachers-page .apply-btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.lesson-page .apply-btn .add-detail,
+.teachers-page .apply-btn .add-detail {
+  background-color: var(--primary-500);
+  border-radius: 8px;
+  padding: 10px 24px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+/* student -page */
+
+.details-page.students-page .student-filter-header,
+.details-page.career-page .career-filter-header {
+  width: 100%;
+  display: flex;
+}
+
+/* teacher-page */
+
+.details-page.teachers-page .teacher-header-filter,
+.details-page.students-page .student-header-filter {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+}
+
+.details-page .consultation-header-filter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.details-page .consultation-header-filter .consultation-top-filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.details-page .consultation-header-filter .consultation-bottom-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-page
+  .consultation-header-filter
+  .consultation-bottom-filter
+  .consultation-bottom-filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.lesson-table-btn-container.teacher,
+.lesson-table-btn-container.student,
+.lesson-table-btn-container.groups,
+.lesson-table-btn-container.tution {
+  margin-left: 10px;
+}
+
+.details-page .teacher-header-filter-container,
+.details-page .student-header-filter-container,
+.details-page .consultation-header-filter-container {
+  width: 100%;
+}
+
+.details-header .circle-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+}
+.details-header .circle-icon .filter-count {
+  position: absolute;
+  left: 45%;
+  font-size: 14px;
+  color: var(--secondary-900);
+  font-weight: bold;
+}
+.details-header .circle-icon svg {
+  transform: rotate(90deg);
+}
+/* tution fee */
+
+.details-page.tuition-fee-page .tuition-fee-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-page.tuition-fee-page
+  .tuition-fee-container
+  .tuition-fee-payment-container {
+  margin: 10px 0 20px 0;
+}
+.details-page.tuition-fee-page .tution-fee-filter-header {
+  width: 100%;
+  display: flex;
+}
+
+/* groups */
+.details-page.groups-page .groups-filter-header {
+  width: 100%;
+  display: flex;
+}
+
+/* lesson  page */
+
+.details-page .lesson-page-header-container {
+  width: 100%;
+}
+
+.details-page .lesson-page-header-container .lesson-page-header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.details-page
+  .lesson-page-header-container
+  .lesson-page-header-top
+  .lesson-status-header {
+  width: 60%;
+}
+.details-page
+  .lesson-page-header-container
+  .lesson-page-header-top
+  .lesson-page-add-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.details-page .lesson-page-header-container .lesson-page-filter-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.consultation-bottom-filter
+  .consultation-bottom-filter-container
+  .dropdown-name {
+  margin: 0;
+}
+.consultation-bottom-filter
+  .consultation-bottom-filter-container
+  .date-container {
+  margin-left: 20px;
+}
+
+
+.details-page .lesson-page-header-container .lesson-table-right-container{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .lesson-page .details-header-content .details-header-content-left {
+    width: 100%;
+  }
+  .lesson-page .details-header-content .add-detail {
+    margin-top: 10px;
+  }
+
+  .lesson-page .details-header-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .details-header-content-left .lesson-table-header-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .details-header-content-left
+    .lesson-table-header-content
+    .lesson-table-status {
+    width: 100%;
+  }
+  .details-header-content-left
+    .lesson-table-header-content
+    .lesson-table-datepick {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .consultation-bottom-filter
+    .consultation-bottom-filter-container
+    .date-container {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .lesson-table-add-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .details-page .lesson-page-header-container .lesson-page-filter-container {
+    flex-direction: column;
+  }
+  .details-page .lesson-page-header-container .lesson-page-apply-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 780px) {
+  .details-header-content {
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+  .details-page.courses .details-header-content {
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+  .details-header-content .details-header-content-left {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .details-header-content
+    .details-header-content-left
+    .search-input-con
+    .input-box {
+    width: 100%;
+  }
+  .details-header-content .details-header-content-left .search-input-con {
+    width: 200px !important;
+  }
+  .details-header-content .details-header-content-left .dropdown-name {
+    margin: 0;
+    margin: 12px 0;
+    width: 100%;
+  }
+  .details-header-content .details-header-content-left .dropdown-name.desktop {
+    display: none;
+  }
+  .details-header-container .dropdown-name.mobile {
+    display: inline-block;
+  }
+
+  .lesson-table-btn-container.desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .details-header-content .add-detail {
+    padding: 9px 16px;
+  }
+  .details-header-content .add-detail svg {
+    width: 12px;
+    height: 12px;
+  }
+  .details-header-content .search-input-con .input-box input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .details-header-content .details-header-content-left .search-input-con {
+    width: 100% !important;
+  }
+}

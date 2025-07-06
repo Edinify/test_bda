@@ -1,0 +1,98 @@
+.css-lref2s-MuiTableCell-root{
+    border: none;
+}
+
+.css-177gid-MuiTableCell-root{
+    border: none;
+}
+
+.css-1lmtkkv-MuiTableRow-root{
+    border-bottom: 0.5px solid gray;
+}
+.css-rorn0c-MuiTableContainer-root{
+    overflow-x:none;
+}
+
+.paids-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paids-container .paids-content{
+    display: flex;
+}
+.paids-container .css-ahj2mt-MuiTypography-root{
+    font-size: 16px;
+}
+.paids-container .css-ahj2mt-MuiTypography-root:nth-child(2){
+    margin-left: 10px;
+}
+.css-bhp9pd-MuiPaper-root-MuiCard-root{
+    padding: 10px;
+    box-shadow: none;
+}
+.paids-container .minus-icon-con{
+    cursor: pointer;
+}
+
+
+.payment-container{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.payment-container.payment-green{
+    background-color: rgb(212, 255, 191);
+}
+
+.payment-container.payment-red{
+    background-color: rgb(255, 206, 209);
+}
+
+.confirm-table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.confirm-table tr th {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--neutrals-600);
+    border: none;
+    padding: 12px;
+    text-align: start;
+    border-top: none;
+  }
+  .confirm-table tr td {
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 6px ;
+    text-align: start;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    border: 0.5px solid var(--neutrals-500);
+  }
+  .confirm-table h2{
+    font-size: 13px;
+  }
+
+  .confirm-information-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid ;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  .confirm-information-container h2:nth-child(2){
+    color: var(--neutrals-600);
+    margin-left: 10px;
+
+}

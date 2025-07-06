@@ -1,0 +1,13 @@
+.diploma-page-header-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.diploma-page-header-container .diploma-table-status{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}

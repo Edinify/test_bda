@@ -1,0 +1,1 @@
+export const apiSocket = "http://localhost:4000";

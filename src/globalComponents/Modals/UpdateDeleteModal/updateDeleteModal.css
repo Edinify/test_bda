@@ -1,0 +1,65 @@
+.func-component {
+  cursor: pointer;
+  position: relative;
+}
+.delete-update-modal {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100000;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 12px;
+  right: 37px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: translateY(10px);
+}
+.delete-update-modal::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to top right, white 50%, transparent 50%);
+  transform: rotate(90deg);
+  right: -10px;
+}
+
+.delete-update-modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  /* padding: 10px 60px 0 15px; */
+}
+
+.delete-update-modal h4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #1e1e1e;
+  cursor: pointer;
+  padding: 10px 60px 0 15px;
+}
+
+/* .delete-update-modal h4:first-child {
+  padding: 10px 60px 0 15px;
+}
+.delete-update-modal h4.only {
+  padding: 10px 60px 10px 15px;
+} */
+.delete-update-modal .delete-func {
+  color: #f03b2a;
+  /* padding: 10px 60px 12px 15px; */
+}
+.delete-update-modal .delete-feed {
+  padding: 10px 60px 10px 15px;
+}
+@media only screen and (max-width: 1280px) {
+  .delete-update-modal {
+    right: 0;
+    top: 26px;
+  }
+}

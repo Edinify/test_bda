@@ -1,0 +1,32 @@
+.global-head-tabs {
+}
+
+.global-head-tabs {
+  background: var(--neutrals-200, #ececec);
+  padding: 16px 16px 0 16px;
+  width: 100%;
+  display: flex;
+}
+.global-head-tabs a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 8px 8px 0px 0px;
+  color: var(--neutrals-600);
+  cursor: pointer;
+}
+.global-head-tabs a.active {
+  background: #fff;
+  color: var(--neutrals-900);
+}
+
+@media screen and (max-width: 500px) {
+  .global-head-tabs a {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 8px 8px 0px 0px;
+    color: var(--neutrals-600);
+    cursor: pointer;
+  }
+}

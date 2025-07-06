@@ -1,0 +1,582 @@
+.details-page {
+  /* padding-bottom: 30px; */
+}
+/* details-table */
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.details-table tr th {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutrals-600);
+  border: none;
+  padding: 12px;
+  text-align: start;
+  border: 0.5px solid var(--neutrals-500);
+  border-top: none;
+  min-width: 200px;
+}
+.details-table tr th:last-child {
+  min-width: 10px;
+}
+
+.details-table tr td {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  text-align: start;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  border: 0.5px solid var(--neutrals-500);
+}
+.details-table tr td .check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.details-table tr td .edit-icon {
+  background-color: var(--primary-500);
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.details-table tr td .edit-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.details-table tr td.email {
+  text-transform: lowercase;
+}
+.details-table tr td.student-length {
+  cursor: pointer;
+}
+.details-table tr td.salary {
+  overflow: hidden;
+  width: 100px;
+}
+.details-table tr td.overflow-hiiden {
+  overflow: hidden;
+  width: 100px;
+}
+.details-table.syllabus-table tr td:first-child,
+.details-table.syllabus-table tr th:first-child {
+  width: 80px;
+}
+.details-table tr td:first-child,
+.details-table tr th:first-child {
+  padding-left: 24px;
+  border-left: none;
+}
+.details-table tr td:last-child,
+.details-table tr th:last-child {
+  text-align: end;
+  width: 60px;
+  border-right: none;
+}
+
+.details-table.updates tr td:last-child,
+.details-table.updates tr th:last-child {
+  
+  width: 200px;
+  text-align: start;
+}
+.career-table-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+.tuition-fee-page .details-table tr th {
+  text-align: center;
+}
+
+.tuition-fee-page .details-table tr th:nth-last-child(4) {
+  width: 80px;
+}
+
+.tuition-fee-page .details-table tr th:nth-last-child(3) {
+  width: 160px;
+}
+.tuition-fee-page .details-table tr th:nth-last-child(2) {
+  width: 130px;
+}
+
+.tuition-fee-page .details-table tr th:nth-last-child(6) {
+  width: 130px;
+}
+.tuition-fee-page .details-table tr th:nth-last-child(7) {
+  width: 130px;
+}
+
+.tuition-fee-page .details-table tr th:nth-last-child(5) {
+  width: 130px;
+}
+
+/* .details-table.courses-table tr th:first-child,
+.details-table.courses-table tr td:first-child {
+  width: 80%;
+} */
+
+.details-table.courses-table.only-show tr th:last-child,
+.details-table.courses-table.only-show tr td:last-child {
+  text-align: start;
+}
+
+/* .details-table.courses-table.update tr th:first-child,
+.details-table.courses-table.update tr td:first-child {
+  width: 100%;
+} */
+
+.details-table.syllabus-table tr th:nth-child(2),
+.details-table.syllabus-table tr td:nth-child(2) {
+  width: 100%;
+}
+/* stimulations */
+.stimulations-page .details-table tr th {
+  border-top: 0.5px solid var(--neutrals-500);
+}
+.feedback-page .details-table tr th {
+  border-top: 0.5px solid var(--neutrals-500);
+}
+.finance-page .details-table tr th {
+  border-top: 0.5px solid var(--neutrals-500);
+}
+
+/* lesson table */
+.details-table.lesson-table tr th:nth-last-child(3),
+.details-table.lesson-table tr td:nth-last-child(3),
+.details-table.lesson-table tr th:nth-child(2),
+.details-table.lesson-table tr td:nth-child(2) {
+  /* width: 120px; */
+}
+
+.details-table.lesson-table tr th:nth-last-child(2),
+.details-table.lesson-table tr td:nth-last-child(2) {
+  /* width: 140px; */
+}
+
+.details-table.lesson-table tr th:nth-last-child(4),
+.details-table.lesson-table tr td:nth-last-child(4) {
+  width: 10px !important;
+}
+
+.details-table.lesson-table tr th:nth-last-child(8),
+.details-table.lesson-table tr td:nth-last-child(8) {
+  /* width: 100px; */
+}
+
+.details-table.lesson-table .table-scroll-text svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* only-show */
+.details-table.student-table.only-show tr th,
+.details-table.student-table.only-show tr td {
+  width: auto;
+}
+.details-table.student-table.only-show tr th:last-child,
+.details-table.student-table.only-show tr td:last-child,
+.details-table.teacher-table.only-show tr th:last-child,
+.details-table.teacher-table.only-show tr td:last-child {
+  width: auto;
+  width: 120px;
+}
+.details-table.student-table.only-show tr th:nth-last-child(2),
+.details-table.student-table.only-show tr th:nth-last-child(3),
+.details-table.teacher-table.only-show tr th:nth-last-child(2),
+.details-table.teacher-table.only-show tr th:nth-last-child(3) {
+  width: auto;
+  width: 200px;
+}
+
+.details-table.student-table.update tr th:nth-last-child(2),
+.details-table.student-table.update tr th:nth-last-child(3),
+.details-table.teacher-table.update tr th:nth-last-child(2),
+.details-table.teacher-table.update tr th:nth-last-child(3) {
+  width: auto;
+  /* width: 200px; */
+}
+/* only-show finished */
+.details-table.teacher-table tr th:nth-last-child(3),
+.details-table.student-table tr th:nth-last-child(3) {
+  width: 80px;
+}
+
+.details-table.student-table tr th:nth-last-child(2) {
+  width: 80px !important;
+}
+
+.details-table.teacher-table tr th:nth-last-child(2),
+.details-table.student-table tr th:nth-last-child(2) {
+  width: 100px;
+}
+.details-table.student-table thead {
+  position: sticky;
+  background-color: white;
+  z-index: 10;
+  top: -2px;
+}
+.details-table.teacher-table thead,
+.details-table.events-table thead,
+.details-table.courses-table thead,
+.details-table.career-table thead,
+.details-table.consultation-page thead,
+.details-table.syllabus-table thead,
+.details-table.tuition-table thead,
+.details-table.diploma-table thead,
+.details-table.lesson-table thead {
+  position: sticky;
+  background-color: white;
+  z-index: 10;
+  top: 0;
+}
+
+.details-table tr td.more,
+.details-table tr td.more {
+  text-decoration: underline;
+  color: var(--neutrals-900);
+  cursor: pointer;
+}
+
+.details-table tr td.confirm {
+  text-decoration: underline;
+  color: var(--neutrals-900);
+  cursor: pointer;
+}
+
+.details-page.lesson-page tr td:nth-last-child(2) {
+  /* padding: 0; */
+}
+
+.details-table.bonus-table tr th:nth-last-child(2),
+.details-table.fine-table tr th:nth-last-child(2) {
+  width: 118px;
+}
+.details-table.bonus-table tr td:nth-last-child(2),
+.details-table.fine-table tr td:nth-last-child(2) {
+  width: 118px;
+}
+.details-table .td-con {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.details-table tr td:last-child .delete-modal {
+  display: flex;
+  align-items: center;
+}
+.details-table tr td:last-child .delete-update-modal {
+  display: flex;
+  align-items: flex-start;
+}
+.details-table tr td:last-child > .func-component {
+  display: flex;
+  align-items: center;
+}
+.details-table tr td:last-child .func-component svg {
+  cursor: pointer;
+}
+.details-table .cell-number {
+  margin-right: 7px;
+}
+.details-table .table-scroll-text {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-right: 24px;
+}
+.details-table .table-scroll-text.no-wrap {
+  white-space: nowrap;
+}
+.details-table .table-scroll-text.profiles {
+  text-transform: lowercase;
+}
+.details-table .table-scroll-text::-webkit-scrollbar {
+  height: 2px;
+}
+.details-table .table-scroll-text::-webkit-scrollbar-track,
+.details-table .table-scroll-text::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  transition: 0.3s;
+}
+.details-table .table-scroll-text:hover::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+.details-table .right-fade {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background: linear-gradient(
+    270deg,
+    #ffffff 30.73%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.details-table.consultation-page tr th:nth-last-child(4),
+.details-table.consultation-page tr td:nth-last-child(4),
+.details-table.consultation-page tr th:nth-last-child(3),
+.details-table.consultation-page tr td:nth-last-child(3) {
+  text-align: center;
+}
+
+.details-table.incomes-table tr th:nth-last-child(4) {
+  width: 100px !important;
+}
+
+/* details-table END*/
+
+/* details-tablet*/
+.details-list-tablet {
+  display: none;
+}
+/* .finance-page .details-list-tablet {
+  border-top: 0.5px solid var(--neutrals-300, #ddd);
+} */
+.stimulations-page .details-list-tablet {
+  border-top: 0.5px solid var(--neutrals-300, #ddd);
+}
+.feedback-page .details-list-tablet {
+  border-top: 0.5px solid var(--neutrals-300, #ddd);
+}
+.details-list-tablet .details-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #717171;
+  padding: 12px 16px;
+  border-bottom: 0.5px solid var(--neutrals-300, #ddd);
+}
+
+/* career page */
+
+.details-table.career-table,
+.details-table.student-table,
+.details-table.teacher-table,
+.details-table.consultation-page,
+.details-table.events-table,
+.details-table.tuition-table,
+.details-table.lesson-table,
+.details-table.diploma-table
+/* .details-table.courses-table */ {
+  width: auto;
+  overflow-x: scroll;
+}
+
+.scroll tr td:last-child {
+  border: 1px solid red;
+}
+
+.details-table .td-con.student-status {
+  width: 150px;
+}
+
+.details-table.career-table tr th:last-child,
+.details-table.career-table tr td:last-child,
+.details-table.student-table tr th:last-child,
+.details-table.student-table tr td:last-child,
+.details-table.teacher-table tr th:last-child,
+.details-table.teacher-table tr td:last-child,
+.details-table.consultation-page tr th:last-child,
+.details-table.consultation-page tr td:last-child,
+.details-table.events-table tr th:last-child,
+.details-table.events-table tr td:last-child,
+.details-table.tuition-table tr th:last-child,
+.details-table.tuition-table tr td:last-child,
+.details-table.lesson-table tr th:last-child,
+.details-table.lesson-table tr td:last-child {
+  position: sticky;
+  z-index: 1;
+  right: 0;
+  background-color: var(--neutrals-200);
+  /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+
+@media screen and (max-width: 700px) {
+  .details-table {
+    display: none;
+  }
+  .details-table.syllabus-table {
+    display: table;
+  }
+  .details-table tr td {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .details-table tr th {
+    padding: 8px;
+  }
+  .details-table tr td:first-child,
+  .details-table tr th:first-child {
+    padding-left: 12px;
+  }
+  .details-table.syllabus-table tr td:first-child,
+  .details-table.syllabus-table tr th:first-child {
+    width: 50px;
+  }
+  .details-table tr td:last-child,
+  .details-table tr th:last-child {
+    width: 40px;
+  }
+  .details-list-tablet {
+    display: block;
+  }
+  .details-list-tablet.syllabus-tablet {
+    display: none;
+  }
+  .details-list-tablet .details-list-title {
+    padding: 11px 16px;
+  }
+  .details-list-tablet .content-box {
+    padding: 12px 16px;
+    padding-right: 45px;
+    border-bottom: 0.5px solid var(--neutrals-300, #ddd);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .details-list-tablet.with-more .content-box {
+    padding-right: 62px;
+  }
+  .details-list-tablet .content-box .left {
+    overflow: hidden;
+  }
+
+  .details-list-tablet .content-box .left .student-count {
+    border-bottom: 1px solid;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .details-list-tablet .content-box .left h3 {
+    font-size: 16px;
+    color: var(--neutrals-900);
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .details-list-tablet .content-box .left .groups-list h2 {
+    font-size: 14px;
+  }
+  .details-list-tablet.course-list-mobile .content-box .left h3 {
+    font-weight: 600;
+  }
+  .details-list-tablet .content-box .left ul li {
+    display: flex;
+    font-size: 14px;
+    color: var(--neutrals-600);
+    font-weight: 500;
+    margin: 4px 0;
+    white-space: nowrap;
+  }
+  .details-list-tablet .content-box .left .groups-list li {
+    flex-direction: column;
+  }
+  .details-list-tablet .content-box .left .groups-list li span {
+    color: var(--neutrals-900);
+    font-weight: 700;
+  }
+  .details-list-tablet .content-box .left ul li p {
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+  }
+  .details-list-tablet .content-box .left ul li p.profiles {
+    text-transform: lowercase;
+  }
+  .incomes-page .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .incomes-page .content-box .left ul li {
+    font-size: 16px;
+  }
+  .incomes-page .content-box .left ul li p {
+    color: var(--neutrals-900);
+  }
+  .details-list-tablet .content-box .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    position: absolute;
+    right: 16px;
+    background-color: #fff;
+  }
+  .details-list-tablet.with-more .content-box .right {
+    top: 0;
+    height: 100%;
+    padding: 12px 0;
+  }
+  .details-list-tablet .content-box .right.courses {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .details-list-tablet .content-box .right .more-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-list-tablet .content-box .right .more-content span {
+    font-size: 14px;
+    color: var(--neutrals-600);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  .details-list-tablet .content-box .right .salary-tablet-modal {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .details-list-tablet .content-box .right .salary-tablet-modal svg {
+    cursor: pointer;
+  }
+  .details-list-tablet .content-box.admin .right {
+    justify-content: center;
+  }
+  .details-table.syllabus-table tr th:nth-child(2),
+  .details-table.syllabus-table tr td:nth-child(2) {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .details-list-tablet .content-box {
+    padding: 8px 12px;
+  }
+  .details-list-tablet .content-box .right .func-component svg,
+  .details-list-tablet .content-box .right span svg {
+    width: 20px;
+    height: 20px;
+  }
+  .incomes-page .content-box .left ul li p {
+    color: var(--neutrals-600);
+    font-size: 14px;
+  }
+  .details-list-tablet .content-box .left .payment {
+    color: var(--neutrals-900);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .details-list-tablet .content-box .left .payment p {
+    color: var(--neutrals-900);
+    font-size: 16px;
+  }
+  .details-list-tablet .details-list-title {
+    padding: 11px 12px;
+  }
+}

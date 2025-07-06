@@ -1,0 +1,132 @@
+/* UpdatesModal.css */
+
+.create-update-modal.updates {
+  width: 50%;
+}
+
+.create-update-modal.updates .updates-datas-container {
+  display: flex;
+  /* align-items: center; */
+}
+
+.create-update-modal.updates .update-row {
+  display: flex;
+  align-items: center;
+}
+
+.create-update-modal.updates .update-row.groups {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.create-update-modal.updates .update-row.groups .group-container {
+  display: flex;
+  flex-direction: column;
+  /* margin: 10px 0; */
+}
+
+.create-update-modal.updates .update-row.groups .group-container h4 , .create-update-modal.updates .update-row.groups .group-container p {
+  margin: 10px 0;
+}
+
+.create-update-modal.updates .update-row .updates-key {
+  font-size: 16px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.create-update-modal.updates .update-row .update-value {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.create-update-modal.updates .update-row .update-value.new {
+  color: #2ecc71;
+}
+
+.create-update-modal.updates .update-row .update-value.new.change {
+  color: #e74c3c;
+}
+
+.create-update-modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.update-arrow {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.create-update-modal.updates .status-button-container {
+  margin: 10px;
+}
+
+.create-update-modal.updates .status-button-container button:nth-child(1) {
+  margin: 0;
+  /* background-color: rgb(70, 42, 255); */
+}
+
+/* .create-update-modal.updates .status-button-container button:nth-child(2) {
+  background-color: #07bc0c;
+}
+
+.create-update-modal.updates .status-button-container button:nth-child(3) {
+  background-color: #e74c3c;
+} */
+
+.create-update-modal.updates .status-button-container button {
+  /* background-color: var(--primary-500); */
+  /* padding: 8px 36px; */
+  background-color: gray;
+  padding: 8px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: 0.3s;
+  height: 41px;
+  margin-left: 20px;
+}
+
+.create-update-modal.updates .status-button-container button.active {
+  background-color: var(--primary-500);
+}
+
+.create-update-modal.updates .update-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create-update-modal.updates .update-btn-container button {
+  background-color: var(--primary-500);
+  /* padding: 8px 36px; */
+  padding: 8px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: 0.3s;
+  height: 41px;
+}
+
+
+.new-value-changed {
+  color: #e74c3c; 
+  font-weight: bold;
+}
+
+.old-value{
+  color: #2ecc71;
+}

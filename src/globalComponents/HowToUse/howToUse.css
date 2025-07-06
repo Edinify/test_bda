@@ -1,0 +1,180 @@
+.how-to-use{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.how-to-use .how-to-use-header-con{
+    padding: 24px;
+    background-color: white;
+    /* float: right; */
+    position: absolute;
+    overflow-y: scroll;
+    right: 0;
+    height: 100%;
+    width: 400px;
+}
+.how-to-use .how-to-use-header-con.active{
+    display: none;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-header .how-to-use-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-header .how-to-use-head .how-to-use-back-mobile{
+    display: none;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-header h2 {
+    color: var(--neutrals-900);
+    font-size: 18px;
+    font-weight: 700;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-header .how-to-use-close-icon{
+    background: rgba(30, 30, 30, 0.06);
+    border-radius: 16px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-rule-con{
+    background-color: var(--primary-50);
+    border-radius: 8px;
+    margin-top: 24px;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-rule-con .rule-con{
+    padding: 15px 24px 12px 24px;
+    display: flex;
+    align-items: center;
+}
+.how-to-use  .how-to-use-header-con .how-to-use-rule-con .rule-con .rule-about{
+    margin-left: 12px;
+}
+
+.how-to-use  .how-to-use-header-con .how-to-use-rule-con .rule-con .rule-about h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--neutrals-900);
+}
+
+.how-to-use  .how-to-use-header-con .how-to-use-rule-con .rule-con .rule-about p{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutrals-900);
+}
+
+.how-to-use  .how-to-use-header-con .rule-context-con{
+    margin-top: 8px;
+}
+.how-to-use  .how-to-use-header-con .rule-context-con .rule-context {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 0.5px solid var(--neutrals-300);
+
+}
+
+.how-to-use  .how-to-use-header-con .rule-context-con .rule-context p{
+    font-size: 14px;
+    color: var(--neutrals-900);
+    font-weight: 600;
+
+}
+
+
+.how-to-use  .how-to-use-header-con .rule-context-con .rule-context ul li{
+    font-size: 14px;
+    color: var(--neutrals-900);
+    font-weight: 600;
+    list-style: disc;
+    margin-top: 4px;
+}
+.how-to-use  .how-to-use-header-con .rule-context-con .rule-context .how-to-use-imgs.tablet{
+    display: none;
+    text-align: center;
+}
+.how-to-use  .how-to-use-header-con .rule-context-con .rule-context .how-to-use-imgs.mobile{
+    display: none;
+    text-align: center;
+}
+
+.dashboard-use .how-to-use-header-con .how-to-use-header .dash-context{
+    margin: 24px 0 16px 0;
+}
+
+.dashboard-use .how-to-use-header-con .how-to-use-header .dash-context h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.dashboard-use .how-to-use-header-con .how-to-use-header .dash-context p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--neutrals-900);
+}
+
+.dashboard-use .how-to-use-header-con .how-to-use-header .rule-context-con .rule-context{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    border: none;
+
+}
+.dashboard-use .how-to-use-header-con .how-to-use-header .rule-context-con .rule-context img {
+    margin-top: 12px;
+}
+
+.dashboard-use .how-to-use-header-con .how-to-use-header .how-to-use-head .back{
+    display: flex;
+}
+.dashboard-use .how-to-use-header-con .how-to-use-header .how-to-use-head .back h2{
+    margin-left: 12px;
+}
+
+@media screen and (max-width:1280px) {
+    .how-to-use  .how-to-use-header-con .rule-context-con .rule-context .how-to-use-imgs.desktop{
+        display: none;
+    }
+    .how-to-use  .how-to-use-header-con .rule-context-con .rule-context .how-to-use-imgs.tablet{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .how-to-use .how-to-use-header-con{
+        width: 100%;
+    }
+    .how-to-use  .how-to-use-header-con .rule-context-con .rule-context .how-to-use-imgs.tablet{
+        display: none;
+    }
+    .how-to-use  .how-to-use-header-con .rule-context-con .rule-context .how-to-use-imgs.mobile{
+        display: block;
+    }
+    .how-to-use  .how-to-use-header-con .how-to-use-header .how-to-use-close-icon{
+        display: none;
+    }
+    .how-to-use  .how-to-use-header-con .how-to-use-header .how-to-use-head .how-to-use-back-mobile{
+        display: block;
+    }
+    .how-to-use .how-to-use-header-con .how-to-use-header .how-to-use-head{
+        justify-content: flex-start;
+    }
+    .how-to-use .how-to-use-header-con .how-to-use-header .how-to-use-head h2{
+        margin-left: 12px;
+    }
+    .how-to-use{
+        background-color: white;
+    }
+    .how-to-use .how-to-use-header-con{
+        background-color: transparent;
+    }
+}
+
+

@@ -1,0 +1,100 @@
+.students-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.students-list .student-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--neutrals-100);
+  border-radius: 4px;
+  /* padding: 4px 8px; */
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.create-update-modal-con .content-type {
+  font-size: 14px;
+}
+.students-list .student-list h5 {
+  font-size: 20px;
+}
+.student-name.green {
+  background-color: #00bb00;
+}
+.student-name.red {
+  background-color: var(--error-600);
+}
+.student-list .drop-icon {
+  display: flex;
+  align-items: center;
+  /* margin-left: 5px; */
+  margin: 0 10px;
+  padding: 4px 8px;
+}
+
+.student-list .student-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--neutrals-900);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 4px 8px;
+}
+
+.student-list .status {
+  border: 0.5px solid #dddddd;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: var(--neutrals-100);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: 0.3s;
+}
+
+.student-list .status.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.student-list .status p {
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--neutrals-300);
+  padding: 4px 6px;
+}
+.student-list .status p:last-child {
+  border-bottom: none;
+}
+.student-list .status p:nth-child(1) {
+  color: var(--error-600);
+}
+.student-list .status p:nth-child(2) {
+  color: #00bb00;
+}
+
+.student-list .status p:nth-child(1) {
+  color: #00bb00;
+}
+.student-list .status p:nth-child(2) {
+  color: var(--error-600);
+}

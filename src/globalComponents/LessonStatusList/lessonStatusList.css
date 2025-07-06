@@ -1,0 +1,88 @@
+.class-select {
+  margin-left: 16px;
+  width: 50%;
+}
+.class-select ul {
+  display: flex;
+  height: 51px;
+}
+.class-select ul li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  cursor: pointer;
+  border: 1px solid var(--neutrals-300);
+  display: flex;
+  background-color: #f4f4f4;
+  align-items: center;
+  justify-content: center;
+  /* width: 143px; */
+  width: 40%;
+  transition: 0.3s;
+}
+.class-select ul li:nth-child(1) {
+  border-radius: 8px 0 0 8px;
+  width: 25%;
+  /* width: 75px; */
+}
+.class-select ul li:nth-child(3) {
+  border-radius: 0 8px 8px 0;
+}
+.class-select ul .active {
+  color: white;
+  background-color: var(--primary-500);
+  border-color: var(--primary-500);
+}
+
+.class-select ul .none {
+  color: #5d5d5d;
+  background-color: #f4f4f4;
+}
+.dropdown-select {
+  margin-left: 8px;
+}
+.dropdown-fine-type {
+  height: 51px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  color: #1e1e1e;
+  /* font-size: 14px; */
+  line-height: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .class-select ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .class-select ul {
+    height: 46px;
+  }
+  .class-select ul li {
+    font-size: 14px;
+  }
+
+  :where(.css-dev-only-do-not-override-w8mnev).ant-picker {
+    height: 46px !important;
+  }
+
+  .class-select ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dropdown-select {
+    margin: 0;
+    margin-top: 12px;
+  }
+}

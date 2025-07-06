@@ -1,0 +1,10 @@
+.excel-export-btn {
+  cursor: pointer;
+  background: transparent;
+  margin-left: 15px;
+}
+
+.excel-download {
+  color: var(--primary-500);
+  font-size: 25px !important;
+}

@@ -1,0 +1,20 @@
+.how-to-use-search {
+  margin-top: 28px;
+}
+.how-to-use-search {
+  border-radius: 8px;
+  background: var(--neutrals-100);
+}
+.how-to-use-search .input-box {
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+}
+.how-to-use-search .input-box input {
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--neutrals-100);
+  margin-left: 20px;
+  /* width: 236px; */
+}

@@ -1,0 +1,252 @@
+/* .table-container {
+  margin: 0 0 80px 0;
+} */
+.table-container table {
+  border-collapse: separate;
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 150%;
+}
+.table-container tbody tr {
+  height: 98px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.table-container thead tr {
+  height: 59px;
+  font-size: 16px;
+  color: var(--neutrals-900);
+  background-color: white;
+}
+/* .table-container tbody tr:nth-child(odd) {
+  background-color: var(--neutrals-200);
+} */
+.table-container thead tr th {
+  /* font-size: 16px; */
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.table-container td,
+.table-container th {
+  border: 1px solid var(--neutrals-500);
+  text-align: center;
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.table-container tbody td {
+  height: 100px;
+  width: 100px;
+}
+.table-container tbody td.lesson-name {
+  text-align: start;
+  padding-left: 12px;
+  padding-left: 15px;
+  position: relative;
+}
+.table-container table td.time {
+  /* font-size: 16px; */
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.table-container table td th .row-head {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--neutrals-900);
+}
+.table-container table td th .row-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--neutrals-700);
+}
+
+/* 4 LESSON ONE CELL */
+.table-container td.teacher-cell {
+  /* padding: 0 !important;  */
+}
+.table-container td.lesson-name .lesson-box-con {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+.table-container td.lesson-name .lesson-box {
+  overflow: hidden;
+  width: 50%;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--neutrals-900);
+  position: relative;
+  padding-left: 4px;
+}
+.table-container td.lesson-name .lesson-box:nth-child(1),
+.table-container td.lesson-name .lesson-box:nth-child(3) {
+  border-right: 0.5px solid var(--primary-500);
+}
+.table-container td.lesson-name .lesson-box:nth-child(1),
+.table-container td.lesson-name .lesson-box:nth-child(2) {
+  border-bottom: 0.5px solid var(--primary-500);
+}
+.table-container td.lesson-name .lesson-box.unviewed {
+  background-color: var(--primary-100);
+}
+.table-container td.lesson-name .lesson-box.cancelled {
+  background-color: #ffced1;
+}
+.table-container td.lesson-name .lesson-box.student-cancelled {
+  background-color: #feecb4;
+}
+.table-container td.lesson-name .lesson-box.confirmed {
+  background-color: #d4ffbf;
+}
+.table-container td.lesson-name .lesson-box.present-cancelled {
+  background-color: #ffbad0;
+}
+.table-container tbody td.lesson-name .lesson-box .icons-con {
+  gap: 2px;
+}
+.table-container tbody td.lesson-name .lesson-box .icons-con svg {
+  width: 11px;
+  height: 11px;
+}
+.table-container tbody td.lesson-name .lesson-box .icons-con.left svg {
+  width: 10px;
+  height: 11px;
+}
+.table-container tbody td.lesson-name .lesson-box .icons-con p {
+  font-size: 10px;
+}
+
+/* 4 LESSON ONE CELL */
+
+/* when opening tablet  */
+.table-container tbody td.lesson-name h3,
+.table-container tbody td.lesson-name p {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--neutrals-900);
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table-container tbody td.lesson-name p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.table-container tbody td.unviewed {
+  background-color: var(--primary-100);
+}
+.table-container tbody td.cancelled {
+  background-color: #ffced1;
+}
+.table-container tbody td.student-cancelled {
+  background-color: #feecb4;
+}
+.table-container tbody td.confirmed {
+  background-color: #d4ffbf;
+}
+.table-container tbody td.present-cancelled {
+  background-color: #ffbad0;
+}
+
+.table-container tbody tr:nth-child(odd) td:nth-of-type(1) {
+  /* background-color: var(--neutrals-200); */
+}
+.table-container tbody tr:nth-child(even) td:nth-of-type(1) {
+  background-color: white;
+}
+.table-container table tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+  width: 100px;
+  height: 20%;
+  background-color: white;
+}
+.table-container table tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+.table-container table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+.table-container table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+.table-container tbody td .icons-con {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.table-container tbody td .icons-con.left {
+  left: 4px;
+  right: auto;
+}
+.table-container tbody td .icons-con p {
+  color: var(--neutrals-900);
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0;
+}
+.table-container tbody td .icons-con .cancelled-student {
+  fill: rgb(190, 19, 19);
+}
+.table-container tbody td .icons-con .star,
+.table-container tbody td .icons-con .letter {
+  width: 16px;
+  height: 16px;
+}
+.table-container tbody td .icons-con .star path {
+  fill: #1e1e1e;
+}
+.table-container tbody td .icons-con .letter path {
+  fill: #1e1e1e;
+}
+
+.table-container .cur-pagination {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.table-container .scrolling {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #9a9a9a;
+  /* max-height: 800px; */
+}
+/* .table-container .scrolling::-webkit-scrollbar {
+  display: none;
+} */
+
+@media (max-width: 1024px) {
+  .table-container thead tr th {
+    width: 150px;
+  }
+  /* thead th:first-child,
+  tbody td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  } */
+}
+
+@media screen and (max-width: 880px) {
+  .table-container {
+    margin-top: 10px;
+  }
+  .table-container .container {
+    padding: 0 12px;
+  }
+}

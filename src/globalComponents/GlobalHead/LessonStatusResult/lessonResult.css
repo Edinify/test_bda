@@ -1,0 +1,30 @@
+.lesson-result-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.lesson-result-container.lesson-status{
+  width: 60%;
+  margin: 10px 0;
+}
+
+.lesson-result-container .lesson-res-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.lesson-result-container .lesson-res-content .circle-icon {
+  position: relative;
+  margin-top: 5px;
+}
+
+.lesson-result-container .lesson-res-content .circle-icon .filter-count {
+  position: absolute;
+  left: 20px;
+}
+
+

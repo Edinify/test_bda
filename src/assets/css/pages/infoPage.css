@@ -1,0 +1,124 @@
+.info-page {
+}
+
+.info-page .info-container {
+  margin: 0 32px;
+}
+
+.info-page .info-header {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  /* justify-content: space-between; */
+}
+
+.info-page .info-header .info-logo {
+  /* width: 200px; */
+  width: 30%;
+  height: auto;
+  /* height: 150px; */
+  /* overflow: hidden; */
+}
+
+.info-page .info-header .info-logo img {
+  /* width: 100%; */
+  width: 200px;
+  height: 100%;
+  /* transform: scale(1.5); */
+}
+
+.info-page .info-header .connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 60%;
+}
+
+.info-page .info-header .connect .social-links {
+  display: flex;
+  align-items: center;
+}
+
+.info-page .info-header .connect .social-links li {
+  margin: 0 10px;
+  display: flex;
+}
+
+.info-page .info-header .connect svg {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.info-page .info-header .connect .contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-page .info-header .connect .contact .phone,
+.info-page .info-header .connect .contact .email {
+  display: flex;
+  align-items: center;
+}
+
+.info-page .info-header .connect .contact .phone span,
+.info-page .info-header .connect .contact .email span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+
+
+.facebook-icon {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.instagram-icon {
+  color: #e1306c; /* Instagram Pink-ish */
+}
+
+.linkedin-icon {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.tiktok-icon {
+  color: #000000; /* TikTok is mostly black/white, or you can use gradient (optional) */
+}
+
+.youtube-icon {
+  color: #ff0000; /* YouTube Red */
+}
+
+
+/* ------------------------------- */
+
+/* header */
+
+
+
+
+.info-page .info-header-container{
+  background-color: #f7f7fe;
+  padding: 10px 0;
+}
+
+
+.info-page .info-header-container .info-navbar{
+  margin: 0 32px;
+}
+
+.info-page .info-header-container .info-navbar ul{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.info-page .info-header-container .info-navbar ul a{
+  font-size: 16px;
+  color: #333333;
+}

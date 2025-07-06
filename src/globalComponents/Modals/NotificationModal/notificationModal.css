@@ -1,0 +1,136 @@
+.notification-modal {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  width: 360px;
+  max-height: 350px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: 0.3s;
+  padding: 24px 16px;
+  z-index: 100;
+}
+.notification-modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.notification-modal .not-mobile-container-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.new-notification h2,
+.prev-notification h2 {
+  color: var(--neutrals-900);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 6px;
+}
+.new-not-content,
+.prev-not-content {
+  margin-left: 12px;
+}
+.new-content-container,
+.prev-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 12px 0;
+  width: 100%;
+}
+.new-content-container img,
+.prev-content-container img{
+  width: 48px;
+  height: 48px;
+}
+.container-about {
+  display: flex;
+  align-items: center;
+}
+.new-not-content h4,
+.prev-not-content h4 {
+  color: var(--neutrals-900);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.new-not-content span,
+.prev-not-content span {
+  color: var(--neutrals-600);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.notif-time {
+  color: var(--neutrals-600);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
+}
+.empty-not {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.empty-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empty-content h2 {
+  font-size: 20px;
+  color: var(--neutrals-900);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1280px) {
+  .empty-content h2 {
+    font-size: 18px;
+  }
+  .new-not-content h4,
+  .prev-not-content h4 {
+    font-size: 14px;
+  }
+  .new-not-content span,
+  .prev-not-content span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .notification-modal h2 {
+    font-size: 20px;
+    position: relative;
+  }
+ 
+}
+
+@media screen and (max-width: 500px) {
+  .notification-modal .not-mobile-container-header {
+    display: flex;
+  }
+
+  .notification-modal {
+    padding: 20px 16px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+    max-height: 100vh;
+  }
+}
